@@ -1,0 +1,69 @@
+{
+  "format_version": "1.0",
+  "source": {
+    "type": "image",
+    "name": "старое-семейное-дерево.jpg",
+    "description": "Фотография бумажного семейного дерева"
+  },
+  "people": [
+    {
+      "id": "p1",
+      "last_name": "Тестов",
+      "first_name": "Иван",
+      "middle_name": "Петрович",
+      "gender": "male",
+      "birth": {
+        "date": "1950-04-15",
+        "precision": "exact",
+        "place": "Волгоград"
+      },
+      "death": {
+        "date": "2020-08-20",
+        "precision": "exact",
+        "place": null
+      },
+      "notes": null,
+      "source_refs": [
+        "старое-семейное-дерево.jpg: карточка в центре"
+      ],
+      "confidence": 0.96,
+      "needs_review": false
+    },
+    {
+      "id": "p2",
+      "last_name": "Тестов",
+      "first_name": "Пётр",
+      "middle_name": "Иванович",
+      "gender": "male",
+      "birth": {
+        "date": "1975",
+        "precision": "year",
+        "place": null
+      },
+      "death": null,
+      "notes": null,
+      "source_refs": [
+        "старое-семейное-дерево.jpg: нижняя карточка"
+      ],
+      "confidence": 0.81,
+      "needs_review": true
+    }
+  ],
+  "relationships": [
+    {
+      "id": "r1",
+      "type": "parent_child",
+      "parent_id": "p1",
+      "child_id": "p2",
+      "source_refs": [
+        "старое-семейное-дерево.jpg: соединяющая линия"
+      ],
+      "confidence": 0.88,
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "У Петра Ивановича распознан только год рождения.",
+    "Родственную связь необходимо подтвердить по исходному изображению."
+  ]
+}
